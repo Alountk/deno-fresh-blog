@@ -22,7 +22,6 @@ Deno.test("listPosts() returns a list of posts", async () => {
 
 Deno.test("listPosts() retuerns a order list by date", async () => {
   const posts = await listPosts();
-  console.log({ posts });
   assertEquals(posts[0].id, "second-post");
   assertEquals(posts[1].id, "hello-world");
 });
